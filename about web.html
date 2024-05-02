@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{
+            height: 15vh;
+        }
+       div.gallery {
+         animation-name:aboutt ;
+         animation-duration: 1s;
+         animation-timing-function:ease-in ;
+         margin: 5px;
+         border: 1px solid #ccc;
+         float: left;
+         width: 400px;
+         padding:20px;
+         margin-left: 5%;
+         margin-top:20px;
+         backdrop-filter: blur(50px);
+         border-radius: 10px;
+         background-color: #C19A6B;
+        }
+        div.gallery2{
+         margin: 5px;
+         border: 1px solid #ccc;
+         float: left;
+         width: 410px;
+         padding:20px;
+         border-radius: 10px;
+         margin-left: 5%;
+         margin-top:20px;
+         animation-name:abouts ;
+         animation-duration: 1s;
+         animation-timing-function:ease-in ;
+         background-color: #C19A6B;
+        }
+        div.gallery img {
+         width: 100%;
+         height: 250px;
+         border-radius: 20px;
+         padding: 5px;
+         float: left;
+         border: none;
+        }
+        div.gallery2 img {
+         width: 100%;
+         height: 250px;
+         border: none;
+         padding: 5px;
+         border-radius: 20px;
+        }
+        div.gallery:hover{
+            transform: scale(0.95);
+            transform: translateY(-14px);
+            transition: transform 0.3s;
+            box-shadow: 1px 1px 5px rgb(0, 0, 0);
+        }
+        div.gallery2:hover{
+            transform: scale(0.95);
+            transform: translateY(-14px);
+            transition: transform 0.3s;
+            box-shadow: 1px 1px 5px rgb(0, 0, 0);
+        }
+        @keyframes aboutt{
+            from{
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+            to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        }
+        @keyframes abouts{
+            from{
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+            to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        }
+        .us{
+            text-align: center;
+        }
+        .sell{
+            text-align: center;
+            padding: 5px;
+        }
+        .plus{
+            padding: 5px;
+        }
+        .plo{
+            font-size: 14px;
+        }
+        .ab{
+            font-size: 14px;
+        }
+        .pan{
+            font-size: 14px;
+            
+        }
+        .animation{
+            margin-top: 30px;
+        }
+        .headd{
+            margin-right: 60%;
+            margin-top: 16px;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="web">
+        <header class="head">
+            <nav class="navbar">
+                <div class="headd">
+                    <h1 id="bag">TR<b class="io">IO</b></h1>
+               </div>
+                <ul>
+                    <li><a class="animation" href="home.html">Home</a></li>
+                    <li><a class="animation" href="shop.html">Products</a></li>
+                    <li><a class="animation" href="about web.html">About</a></li>
+                    <li><a class="animation" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <br>
+        </header>
+    </div>    
+    <div class="polo">
+        <h2 class="us">About us</h2>
+        <div class="gallery">
+            <h3 class="sell">Polo shirt Longsleeve</h3>
+            <a target="_blank" href="longs.jpg">
+              <img src="longs.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <li class="ab">Material: 95% Cotton, 5% Spandex.Soft and comfortable to your skin,suit for daily wear or work.</li>
+            <li class="ab">Long sleeve & casual slim fit henley shirts, comfortable and slim fit casual wear, lightweight, basic designed. High Softness & Wearability.</li>
+            <li class="ab">Suitable Occasion: Casual, Office, Work, Date, Party, Travel, Street, etc. Looking handsome while retaining ease of movement and added comfort.</li>
+          </div>
+          
+          <div class="gallery2">
+            <h3 class="sell">Polo Shirt</h3>
+            <a target="_blank" href="black shirt.jpg">
+              <img src="black shirt.jpg" alt="Forest" width="600" height="400">
+            </a>
+             <li class="plo">High Quality Fabric The mens casual short sleeve shirt is made of textured material. Breathable, soft,<br> lightweight and skin friendly fabric keeps you cool and comfortable even in summer.</li>
+             <li class="plo">Classic Design Coofandy mens summer shirt features regular fit, spread collar, short sleeve and button closure. <br> Casual and simple designs will never be out of style.</li>
+          </div>
+
+          <div class="gallery">
+            <h3 class="sell">Pants</h3>
+            <a target="_blank" href="ab pants.jpg">
+              <img src="ab pants.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <li class="pan">Pants are an item of clothing worn from the waist to anywhere between the knees and the ankles, covering both legs separately. In the United Kingdom, the word pants generally means underwear and not trousers.</li>
+          </div>
+    </div>
+    <script src="source.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'poppins',sans-serif;
+            background:linear-gradient(rgb(234,221,202),rgb(193,154,107));
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 215vh;
+        }
+        .io{
+            color: white;
+        }
+        #bag{
+            color: #C19A6B;
+        }
+        .form-login{
+            background:linear-gradient(rgb(193,154,107),rgb(234,221,202));
+            width: 280px;
+            text-align: center;
+            left: 50%;
+            transform: translate(-50,-50);
+            color: white;
+            margin-left: auto;
+            margin-top: 100px;
+            margin-right: auto;
+            
+            border: solid rgb(0, 0, 0);
+            border-radius: 20px;
+            padding: 20px;
+            padding-bottom: 50px;
+        }
+        .register-login{
+            width: 280px;
+            text-align: center;
+            left: 50%;
+            transform: translate(-50,-50);
+            color: white;
+            margin-left: auto;
+            margin-top: 240px;
+            margin-right: auto;
+            backdrop-filter: blur(50px);
+            background: transparent;
+            border: solid rgb(0, 0, 0);
+            border-radius: 20px;
+            padding: 20px;
+            padding-bottom: 30px;
+            margin-bottom: 100px;
+        }
+        .shop{
+            width: 95px;
+            height: 80px;
+            margin-left: auto;
+            border-radius: 30px;
+        }
+        .Login{
+            padding: 10px;
+            background-color: rgb(0, 110, 255);
+            color: white;
+            margin-left: auto;
+            margin-left: auto;
+            align-items: center;
+            border-radius: 20px;
+            width: 180px;
+            border: solid black 1px;
+        }
+        .submit{
+            width: 180px;
+            background-color: blue;
+            color: whitesmoke;
+            font-family: bold;
+        }
+        .Login:hover{
+            transform: scale(0.95);
+            border: solid white 1px;
+        }
+        input{
+            border: solid black 1px;
+            padding: 10px;
+            border-radius: 200px;
+            margin: 0%;
+        }
+        #register{
+            margin: 30px;
+        }
+        .user{
+            margin: 0%;
+        }
+        #correct{
+            color: rgb(249, 18, 18);
+            font-size: 13px;
+        }
+        h4{
+            font-size: 15px;
+            margin: 0%;
+            color: black;
+            padding: 10px
+        }
+        .sign{
+            margin: 0%;
+        }
+        h1{
+            font-size: 2rem;
+            color:rgb(0, 0, 0)
+        }
+        .signlog{
+            background-color: #c5a987;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border: solid black 1px;
+            border-radius: 20px;
+            
+        }
+        .navbar a {
+         float: left;
+         display: block;
+         color: #000000;
+         text-align: center;
+         padding: 14px 20px;
+         text-decoration: none;
+         font-size: 17px;
+         position: relative;
+         margin: 5px;
+        }
+        nav{
+         display: flex;
+         justify-content: center;
+         text-decoration: none;
+         border-radius: 20px;
+         width: 400px;
+         margin-left: auto;
+         margin-right: auto;
+         color: white;
+         margin-bottom: 50px;
+         position: relative;
+         top: 0%;
+        }
+        .sig{
+            margin: 0%;
+        }
+       nav ul{
+         display: flex;
+         font-weight: 600;
+        }
+       ul li{
+         list-style: none;
+        }
+       li a{
+          padding: 20px;
+        }
+        label{
+            color: rgb(0, 0, 0);
+        }
+       /*Navigation bar's hover animation*/
+       .navbar a:hover {
+         color: rgb(0, 0, 0);
+         transition: ease-out 0.5s;
+         box-shadow: inset 100px 0 0 0 #00ffff
+        }
+      .navbar{
+         -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+         animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+         position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            
+            <div class="headd">
+                <h1 id="bag">TR<b class="io">IO</b></h1>
+            </div>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Products</a></li>
+                <li><a href="about web.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a class="signlog" href="#register-form">sign</a>
+                <a class="signlog" href="#Login-sigin">Login</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+      <div class="form-login" id="Login-sigin">
+        <div class="user">
+            <h1>Login</h1>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <img class="shop" src="the trio shop logo.png" alt="shop">
+            <h4>Username</h4>
+            <input type="email" placeholder="username" id="username">
+        </div>
+        <div class="user">
+            <h4>Password</h4>
+            <input type="password" placeholder="password" id="password"> <br>
+            <label id="correct"></label>
+         </div>
+         <br>
+        <button class="Login" onclick="func()"><b>Login</b></button>
+      </div>
+    </section>
+
+    <div class="register-login" id="register-form">
+        <h1>Sign in</h1>
+        <div class="sign" id="register">
+            <h4 class="sig">FirstName</h4>
+            <input type="text" id="email" placeholder="FirstName">
+        </div>
+
+        <div class="sign" id="register">
+            <h4 class="sig">LastName</h4>
+            <input type="text" id="email" placeholder="LastName">
+        </div>
+
+        <div class="sign" id="register">
+            <h4 class="sig">Email</h4>
+            <input type="email" id="email" placeholder="Email">
+        </div>
+
+        <div class="sign" id="register">
+            <h4 class="sig">password</h4>
+            <input type="password" id="email" placeholder="Password">
+        </div>
+
+        <div class="sign" id="register">
+            <input type="submit" class="submit">
+        </div>
+    </div>
+    <script src="source.js"></script>
+</body>
+</html>
